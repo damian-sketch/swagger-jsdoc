@@ -1,8 +1,7 @@
-const confirm = () => {
-  const ans = confirm('Do you want to publish?');
-  if (ans) {
-    console.log('YAAYY!!');
-  }
-};
+const core = require('@actions/core');
 
-confirm();
+function confirmPublish() {
+  const myInput = core.getInput('inputName', { required: true });
+  console.log(myInput);
+}
+confirmPublish();

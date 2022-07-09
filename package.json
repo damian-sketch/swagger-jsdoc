@@ -18,6 +18,7 @@
     "swagger-jsdoc": "./bin/swagger-jsdoc.js"
   },
   "dependencies": {
+    "@actions/core": "^1.9.0",
     "commander": "6.2.0",
     "doctrine": "3.0.0",
     "glob": "7.1.6",
