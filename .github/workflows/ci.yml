@@ -31,10 +31,11 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v2
+        with:
+            inputName: Cedric
       - name: Confirm publish
         run: yarn confirm
-        with:
-          inputName: Cedric
+        
 
 
   publish:
