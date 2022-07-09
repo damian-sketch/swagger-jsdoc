@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "test:lint": "eslint .",
     "test:js": "jest --verbose",
-    "test": "run-p test:* -cn"
+    "test": "run-p test:* -cn",
+    "confirm": "node confirm.js"
   },
   "main": "index.js",
   "bin": {

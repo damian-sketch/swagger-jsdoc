@@ -25,6 +25,16 @@ jobs:
       - name: Run tests
         run: yarn test
 
+  confirm:
+    name: confirm
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Confirm publish
+        run: yarn confirm
+
+
   publish:
     name: publish
     needs: tests
